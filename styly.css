@@ -9,10 +9,9 @@ html {
 
 body {
   margin: auto;
-  max-width: 600px;
+  width: 600px;
   font-family: sans-serif;
   text-align: center;
-  padding: 1.5rem;
 }
 
 .profil > img,
@@ -81,51 +80,58 @@ h1 {
   background-color: cornflowerblue;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   border: 0.7rem solid rgb(49, 44, 37);
   border-radius: 0.3rem;
+  min-width: 600px;
+  min-height: 600px;
 }
 
-.sachovnice > img:nth-child(1) {
+/*.sachovnice > img:nth-child(1) {
   grid-row: 2;
   grid-column: 1;
+}*/
+
+.CernyPesec {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.sachovnice > img:nth-child(2) {
+.CernyPesec2 {
   grid-row: 3;
   grid-column: 3;
 }
-.sachovnice > img:nth-child(3) {
+.CernyPesec3 {
   grid-row: 4;
   grid-column: 8;
 }
 
-.sachovnice > img:nth-child(4) {
+.BilyPesec {
   grid-row: 4;
   grid-column: 4;
 }
 
-.sachovnice > img:nth-child(5) {
+.CernyStrelec {
   grid-row: 1;
   grid-column: 5;
 }
 
-.sachovnice > img:nth-child(6) {
+.BilyKun {
   grid-row: 5;
   grid-column: 2;
 }
 
-.sachovnice > img:nth-child(7) {
+.CernaVez {
   grid-row: 8;
   grid-column: 3;
 }
 
-.sachovnice > img:nth-child(8) {
+.CernyKral {
   grid-row: 6;
   grid-column: 6;
 }
 
-.sachovnice > img:nth-child(9) {
+.BilyKral {
   grid-row: 8;
   grid-column: 6;
 }

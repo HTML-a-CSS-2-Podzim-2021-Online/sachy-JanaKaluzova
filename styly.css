@@ -4,14 +4,13 @@ html {
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   margin: auto;
-  width: 600px;
+  max-width: 600px;
   font-family: sans-serif;
-  text-align: center;
 }
 
 .profil > img,
@@ -62,6 +61,7 @@ h1 {
 
 .konec {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .button {
@@ -80,58 +80,55 @@ h1 {
   background-color: cornflowerblue;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   border: 0.7rem solid rgb(49, 44, 37);
   border-radius: 0.3rem;
-  min-width: 600px;
-  min-height: 600px;
+  aspect-ratio: 1/1;
 }
 
-/*.sachovnice > img:nth-child(1) {
-  grid-row: 2;
-  grid-column: 1;
-}*/
-
-.CernyPesec {
-  grid-column: 1;
-  grid-row: 2;
+.sachovnice img {
+  max-width: 100%;
 }
 
-.CernyPesec2 {
-  grid-row: 3;
-  grid-column: 3;
-}
-.CernyPesec3 {
-  grid-row: 4;
-  grid-column: 8;
+.figurka {
+  width: 100%;
+  height: auto;
 }
 
-.BilyPesec {
-  grid-row: 4;
-  grid-column: 4;
-}
-
-.CernyStrelec {
-  grid-row: 1;
-  grid-column: 5;
-}
-
-.BilyKun {
-  grid-row: 5;
-  grid-column: 2;
-}
-
-.CernaVez {
+.figurka:nth-child(1) {
+  grid-column: 6;
   grid-row: 8;
-  grid-column: 3;
 }
-
-.CernyKral {
+.figurka:nth-child(2) {
+  grid-column: 6;
   grid-row: 6;
-  grid-column: 6;
+}
+.figurka:nth-child(3) {
+  grid-column: 2;
+  grid-row: 5;
+}
+.figurka:nth-child(4) {
+  grid-column: 4;
+  grid-row: 4;
 }
 
-.BilyKral {
+.figurka:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
+.figurka:nth-child(6) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.figurka:nth-child(7) {
+  grid-column: 8;
+  grid-row: 4;
+}
+.figurka:nth-child(8) {
+  grid-column: 5;
+  grid-row: 1;
+}
+.figurka:nth-child(9) {
+  grid-column: 3;
   grid-row: 8;
-  grid-column: 6;
 }
